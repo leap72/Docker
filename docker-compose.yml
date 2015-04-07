@@ -1,0 +1,9 @@
+web:
+  build: .
+  command: /usr/sbin/apachectl -D FOREGROUND
+  ports:
+    - "8000:8000"
+db:
+  image: mysql
+  environment:
+    - MYSQL_ROOT_PASSWORD=ess:3
